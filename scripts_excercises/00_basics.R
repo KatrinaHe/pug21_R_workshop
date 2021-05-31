@@ -23,6 +23,7 @@
 # pressing ctrl + return.
 # Try to run the following line using ctrl + return:
 41 + 1
+"hello"
 
 #### 2 DATA TYPES ####
 
@@ -42,12 +43,17 @@ typeof(3.2)
 # and run your code using ctrl + return!
 
 # 2.1) What data type is 2? Think first, then try typeof(). Did you expect this result?
+typeof(2)
 
 # 2.2) What data type is 1:4?
+typeof(1:4)
 
 # 2.3) What data type is "R"? What is "I love R"?
-
+typeof("R")
+typeof("I love R")
 # 2.4) What data type is TRUE? What data type is FALSE? (Don't use quotation marks around these!)
+typeof(TRUE)
+typeof(FALSE)
 
 #### 3 LOGICALS ####
 
@@ -55,21 +61,48 @@ typeof(3.2)
 # wild?
 
 # 3.1) Type 12 > 3 into your console. Then, type 12 < 3.
+12 > 3
+12 < 3
+# True and False
 
 # 3.1) Try 12 == 12. And now 12 == 13. What does == do?
+12 == 12
+12 == 13
+# True and False; doppeltes gleichzeichen ist wichtig!
 
 # 3.2) Try out: FALSE & FALSE, then FALSE & TRUE and finally, TRUE & TRUE. What happens?
+FALSE & FALSE
+FALSE & TRUE
+TRUE & TRUE
+# False, False and True
 
 # 3.3) Try the same as above, but replace & with | (alt gr + <). Do you know what do & and | do?
+FALSE | FALSE
+FALSE | TRUE
+TRUE | TRUE
+# False, True and True - & is "and" and | is "or"
 
 # 3.4) What do you think will be the result of 4 < 3 | 4 == 4? What is 4 < 3 & 4 == 4?
+4<3|4==4
+4<3 & 4==4
+# first one is True, second one is False
 
 # 3.5) What is "cat" != "dog"?
+"cat" != "dog"
+"Cat" > "dog"
+# Zeichen ist ein ungleich Zeichen; Antwort ist TRUE
 
 # 3.6) What is "cat" > "dog"? What about other words? Can you find a pattern?
+"cat" < "horse"
+"apple" > cat
+# false - es geht um Alphabet, also größerer Buchstabe zählt
 
 # 3.7) By the way, did you know that logicals have numeric representations? Try TRUE + 1.
 #      Then try FALSE + 1. What is the numeric value of TRUE? What is the numeric value of FALSE?
+TRUE + 1
+FALSE + 1
+# True ist 1, False ist 0
+
 
 #### 4 VARIABLES ####
 
@@ -80,15 +113,21 @@ typeof(3.2)
 # like this:
 
 single_number <- 7
+another_number = 12
 
 # ALWAYS USE VARIABLE NAMES THAT TELL YOU WHAT THAT VARIABLE CONTAINS!!!
 
 # 4.1) Type single_number into the console and hit return.
+single_number
+# it says "7"
 
 # 4.2) Run the following code. What will happen now if you type single_number into the console?
 single_number <- 2
+single_number
+#it now says "2"
 
 # 4.3) Assign something to a variable with a name of your choice.
+test_number <- 4*7
 
 # 4.4) Examine what happens here. What is the result? What do you think will single_number
 #      contain now? 2 or 6?
@@ -102,6 +141,10 @@ number2 + number6
 
 multiplied <- number2 * number6
 multiplied
+
+# delete a variable
+rm(test_numer) 
+#rm for remove
 
 #### THIS IS A GIT HUB CHECKPOINT ####
 
